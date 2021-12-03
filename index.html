@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ssp</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="script.js"></script>
+	<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+	<script>
+		$(document).ready(function () {
+			$("button#btn2").click(function () {
+				$("#div_1").hide();
+				$("#div_3").hide();
+				$("#div_4").hide();
+				$("#div_2").fadeIn();
+
+			});
+		});
+		$(document).ready(function () {
+			$("button#btn3").click(function () {
+				$("#div_1").hide();
+				$("#div_4").hide();
+				$("#div_2").hide();
+				$("#div_3").fadeIn();
+
+			});
+		});
+		$(document).ready(function () {
+			$("button#btn4").click(function () {
+				$("#div_2").hide();
+				$("#div_1").hide();
+				$("#div_3").hide();
+				$("#div_4").fadeIn();
+
+			});
+		});
+		$(document).ready(function () {
+			$("button#btn1").click(function () {
+				$("#div_2").hide();
+				$("#div_4").hide();
+				$("#div_3").hide();
+				$("#div_1").fadeIn();
+
+			});
+		});
+	</script>
+
+	<!-- <style>
+		.modal-windowssp {
+			position: fixed;
+			background-color: rgba(255, 255, 255, 0.25);
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 999;
+			visibility: hidden;
+			opacity: 0;
+			pointer-events: none;
+			transition: all 0.3s;
+		}
+
+		.modal-windowssp:target {
+			visibility: visible;
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.modal-windowssp>div {
+			width: 400px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 2em;
+			background: white;
+		}
+
+		.modal-windowssp header {
+			font-weight: bold;
+		}
+
+		.modal-windowssp h1 {
+			font-size: 150%;
+			margin: 0 0 15px;
+		}
+
+		.modal-closessp {
+			color: #aaa;
+			line-height: 50px;
+			font-size: 80%;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 0;
+			width: 70px;
+			text-decoration: none;
+		}
+		.container {
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.modal-windowssp>div {
+			border-radius: 1rem;
+		}
+
+		.modal-windowssp div:not(:last-of-type) {
+			margin-bottom: 15px;
+		}
+
+		small {
+			color: lightgray;
+		}
+
+
+		.btnssp i {
+			padding-right: 0.3em;
+		}
+	</style> -->
+
+
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 logobox">
+					<img src="ecell_logo_white.png" alt="Entrepreneurship Cell logo" class="logo1">
+					<img src="https://ecelliitkgp.github.io/Newsletter-ecell-iitkgp/KGPSCP%20long%20logo.png"
+						alt="Entrepreneurship Cell logo" class="logo2">
+				</div>
+				<div class="col-sm-6 btnbox">
+					<button id="btn1" class="btn btn-primary btnstyle active">Home</button>
+					<button id="btn2" class="btn btn-primary btnstyle" data-toggle="modal" data-target="#servicesModal">Services</button>
+					<button id="btn3" class="btn btn-primary btnstyle">Previous Partners</button>
+
+					<div class="modal fade" id="servicesModal" role="dialog">
+						<div class="modal-dialog">
+			
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Terms & Conditions</h4>
+								</div>
+								<div class="modal-body" style="text-align:left;">
+									<p style="text-align:left;">You are not eligible to avail discounts under this service if:
+									<ul style="text-align:left;">
+										<li style="text-align:left;">Your startup clocks an annual revenue of INR 1 crore or more.</li>
+										<li style="text-align:left;">You have raised a total amount of INR 2 crore or more through VC/AI or any other kind of investments.</li>
+										<li style="text-align:left;">Your startup has been registered for more than 3 years as on 1st May, 2021.</li>
+									</ul>
+									Have a look at the services which we are offering and if you are interested in availing any such service, refer to the Contact Us section. Based on the number of applicants for a particular startup service and the progress the startup has made, we will be providing assistance to the startups.
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+
+					<!-- <div id="open-modalssp" class="modal-windowssp">
+						<div>
+							<a href="#" title="Close" class="modal-closessp">Close</a>
+							<h1>Voilà!</h1>
+							<div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+							<div><small>Check out</small></div>
+							<a href="https://aminoeditor.com" target="_blank">👉 Amino: Live CSS Editor for Chrome
+						</div>
+					</div> -->
+					<!-- <button id="btn4" class="btn btn-primary btnstyle">Contact us</button> -->
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+	<script>
+		const btnbox = document.querySelectorAll('.btn-primary')
+		btnbox.forEach((arr, index) => {
+			arr.addEventListener('click', () => {
+				btnbox.forEach(item => item.classList.remove('active'))
+				arr.classList.add('active')
+			})
+		})
+	</script>
+	<div id="div_1" class="container-fluid">
+		<div class="row" style="height: auto;">
+			<div class="col-sm-6" style=" height: 90vh;background-color: #11212d;color: #fdf0ea;display: flex;
+            justify-content: center;
+            align-items: center;">
+				<div>
+					<h1 style="font-weight: 600;font-size: 55px;">STARTUP</h1>
+					<h1 style="font-weight: 600;font-size: 55px;">SERVICES</h1>
+					<h1 style="font-weight: 600;font-size: 55px;">PROGRAM</h1>
+				</div>
+			</div>
+			<div class="col-sm-6" style="display: flex;
+            justify-content: center;
+            align-items: center;height:90vh;">
+				<div class="hero-svg svgstyle">
+					<embed src="Asset 2.svg" alt="">
+				</div>
+			</div>
+
+			<!-- <div id="open-modalssp" class="modal-windowssp">
+				<div>
+					<a href="#" title="Close" class="modal-closessp">Close</a>
+					<h1>Voilà!</h1>
+					<div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+					<div><small>Check out</small></div>
+					<a href="https://aminoeditor.com" target="_blank">👉 Amino: Live CSS Editor for Chrome
+				</div>
+			</div> -->
+		</div>
+		<div class="row" style="background-color: #fdf0ea;">
+			<div class="col-sm-12" style="height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;padding:7%;">
+				<p style="text-align: center;
+                font-size: 1.2em;">Startup Services Program is an initiative by E-Cell, IIT Kharagpur. It aims to aid
+					the fledgling start-ups of IIT Kharagpur in terms of providing them certain required business
+					services. Starting-up can be a tricky business. It requires a great deal of effort, will,
+					perseverance on the part of the founders along with plenty of resources.<br>
+
+					Most of the start-ups die out and shut down because of paucity of quality services required at the
+					opportune time. Advice on legal, taxation, financial, technical aspects of running a startup,
+					co-working space, HR needs etc. are just a few things which a startup requires post inception.<br>
+
+					A startup usually faces constant financial crunch in its early stages. To help them in their
+					endeavours, this initiative has been launched wherein these start-ups are provided certain
+					free/discounted services to reduce their financial burden. It is expected that this will encourage
+					more and more students to take up the path of entrepreneurship and IIT Kharagpur will see an
+					unprecedented rise in the number of entrepreneurs being produced in the institute. The benefits
+					under this program are limited only to IIT Kharagpur student and alumni start-ups.</p>
+			</div>
+		</div>
+	</div>
+	<div id="div_2" style="display:none;background-color:#FDF0E0;">
+		<div class="container-fluid services_container">
+			<h2 style="display:none;">Services</h2>
+			<div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+				<div class="controls flex-container">
+					<!-- <ul class="nav" style="    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 3%;
+                ">
+                        <li data-target="#custom_carousel" data-slide-to="0"><a href="#">Slide One</a>
+                        </li>
+                        <li data-target="#custom_carousel" data-slide-to="1"><a href="#">Slide Two</a>
+                        </li>
+                        <li data-target="#custom_carousel" data-slide-to="2"><a href="#">Slide Three</a>
+                        </li>
+                        <li data-target="#custom_carousel" data-slide-to="3"><a href="#">Slide Four</a>
+                        </li>
+                        <li data-target="#custom_carousel" data-slide-to="4"><a href="#">Slide Five</a>
+                        </li>
+                    </ul> -->
+					<div class="container">
+						<div class="row">
+							<!-- <div class="col-sm-3"><button class="servicebutton" data-target="#custom_carousel" data-slide-to="0"><a href="#">Slide One</a>
+                            </button></div>
+                            <div class="col-sm-3"> <button  class="servicebutton"  data-target="#custom_carousel" data-slide-to="1"><a href="#">Slide Two</a>
+                            </button ></div>
+                            <div class="col-sm-3"><button  class="servicebutton"  data-target="#custom_carousel" data-slide-to="2"><a href="#">Slide Three</a>
+                            </button ></div>
+                            <div class="col-sm-3"> <button  class="servicebutton"  data-target="#custom_carousel" data-slide-to="3"><a href="#">Slide Four</a>
+                            </button ></div> -->
+
+							<style>
+								.pagination {
+									display: inline-block;
+								}
+
+								.pagination a {
+									color: black;
+									float: left;
+									padding: 8px 16px;
+									text-decoration: none;
+								}
+
+								.pagination a.active {
+									background-color: #4CAF50;
+									color: white;
+									border-radius: 5px;
+								}
+
+								.pagination a:hover:not(.active) {
+									background-color: #ddd;
+									border-radius: 5px;
+								}
+							</style>
+
+							<div class="pagination">
+								<!-- <a href="#" id="prevBtn">&laquo;</a> -->
+								<a href="#" class="" data-target="#custom_carousel" data-slide-to="0" id="page1btn">1</a>
+								<a href="#" class="active" data-target="#custom_carousel" data-slide-to="1" id="page2btn">2</a>
+								<!-- <a href="#" id="nxtBtn">&raquo;</a> -->
+							</div>
+							<script>
+								document.getElementById('page1btn').addEventListener('click', displayPage1);
+								function displayPage1() {
+									var element = document.getElementById('page1btn');
+									element.classList.add('active');
+									var element = document.getElementById('page2btn');
+									element.classList.remove('active');
+								}
+
+								document.getElementById('page2btn').addEventListener('click', displayPage2);
+								function displayPage2() {
+									var element = document.getElementById('page2btn');
+									element.classList.add('active');
+									var element = document.getElementById('page1btn');
+									element.classList.remove('active');
+								}
+							</script>
+						</div>
+					</div>
+				</div>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" style="    margin-right: auto;
+                margin-left: auto;
+                width: 80%;">
+					<div class="item active">
+						<div class="container-fluid">
+							<div class="row" style="    margin-bottom: 5%;">
+								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
+									<div style="padding:10%;">
+										<h4>MIRO</h4>
+										<div style="margin-left: auto; margin-right: auto;">
+											<img src="https://www.insightplatforms.com/wp-content/uploads/2021/04/Miro-Logo-Square-Insight-Platforms.png"
+												style="margin-left: auto; margin-right: auto; width: auto; height: 100px; display: block">
+										</div>
+										<p style="font-size: 1em;
+                                    text-align: justify;">Miro is the online collaborative whiteboard platform that
+											enables distributed teams to work effectively together, from brainstorming
+											with digital sticky notes to planning and managing agile workflows. With
+											Miro, you can take advantage of a full set of collaboration capabilities,
+											make cross-functional teamwork effortless, and organize meetings and
+											workshops: use video chat, presentation, sharing, and many other features..
+										</p>
+										<button class="btn btn-info" type="button" style="padding: 3% !important; font-size: 1.2em !important;
+                                        margin-left: 36%;
+                                        margin-top: 5%;background-color: #11212d;" data-toggle="modal"
+											data-target="#myModal1">Read more</button>
+									</div>
+								</div>
+								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
+									<div style="padding:10%;">
+										<h4>Founders Genie</h4>
+										<div style="margin-left: auto; margin-right: auto;">
+											<img src="https://foundersgenie.com/images/logo_tr.png"
+												style="margin-left: auto; margin-right: auto; width: auto; height: 100px; display: block">
+										</div>
+										<p style="font-size: 1em;
+                                    text-align: justify;">Founders Genie, one of the various forums under the umbrella
+											of CXO Genie, is an exclusive, “by-invitation only” community formed to
+											bring together like-minded founders with the common objective to solve any
+											given problem within 15 minutes. The company aims at easing the
+											entrepreneurial journey of founders, by providing an ecosystem to grow
+											together. To be the most trusted peer-to-peer platform
+										</p>
+										<button class="btn btn-info" type="button" style="    padding: 3% !important;
+                                            font-size: 1.2em !important;
+                                            margin-left: 36%;
+                                            margin-top: 5%;background-color: #11212d;" data-toggle="modal"
+											data-target="#myModal2">Read more</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="container-fluid">
+							<div class="row" style="    margin-bottom: 5%;">
+								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
+									<div style="padding:10%;">
+										<h4>Startuplabs</h4>
+										<div style="margin-left: auto; margin-right: auto;">
+											<img src="https://ecell-iitkgp.org/ssp/images/startup.png"
+												style="margin-left: auto; margin-right: auto; width: auto; height: 100px; display: block">
+										</div>
+										<p style="font-size: 1em;
+                                    text-align: justify;">
+											Startuplabs is a one stop destination for budding entrepreneurs. They work
+											with an extensive network of partners in order to grow, nurture and
+											cultivate the entrepreneurs, and promise to stand beside them at every step
+											of their entrepreneurial journey. The vision is to become a home to
+											entrepreneurs and to provide a bridge to the buisness world
+										</p>
+										<button class="btn btn-info" type="button" style="    padding: 3% !important;
+                                            font-size: 1.2em !important;
+                                            margin-left: 36%;
+                                            margin-top: 5%;background-color: #11212d;" data-toggle="modal"
+											data-target="#myModal3">Read more</button>
+									</div>
+								</div>
+								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
+									<div style="padding:10%;">
+										<h4>Turning Ideas</h4>
+										<div style="margin-left: auto; margin-right: auto;">
+											<img src="https://www.turningideas.com/static/ti_logo.png"
+												style="margin-left: auto; margin-right: auto; width: auto; height: 100px; display: block">
+										</div>
+										<p style="font-size: 1em;
+                                    text-align: justify;">
+											Turning Ideas provide top-tier core services such as strategy, design, MVP
+											Tech. The companies have full support: accounting, design, engineering,
+											finance, HR, IT, and recruiting. The co-founders focus on building the
+											business and core experts handle the rest. Working alongside entrepreneurs
+											and co-founders, they support the ventures from startup to scale to exit,
+											giving them access to the global networks and services they need to grow.
+										</p>
+										<button class="btn btn-info" type="button" style="    padding: 3% !important;
+                                            font-size: 1.2em !important;
+                                            margin-left: 36%;
+                                            margin-top: 5%;background-color: #11212d;" data-toggle="modal"
+											data-target="#myModal4">Read more</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- End Item -->
+				</div>
+				<!-- End Carousel Inner -->
+
+			</div>
+			<!-- End Carousel -->
+		</div>
+
+		<div class="modal fade" id="myModal1" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Services offered</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+						<ul>
+							<li>Whiteboard sharing</li>
+							<li>Mouse over collaboration, screen sharing and presentations</li>
+							<li>Embed video chat and commenting</li>
+							<li>Microsoft and other application integrations(Zoom, Figma, Webex, Slack, Notion, etc)
+							</li>
+							<li>Concept mapping, strategy and planning, UX, Product development, etc</li>
+						</ul>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="modal fade" id="myModal2" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Services offered</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+						<ul>
+							<li>Networking, exploring synergies</li>
+							<li>Mentorship and connection with experts</li>
+							<li>AI based hiring features</li>
+							<li>Solving problems of founders</li>
+							<li>Real time solution, access to historical solutions</li>
+						</ul>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="modal fade" id="myModal3" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Services offered</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+						<ul>
+							<li>Funding, legal and tech assistance</li>
+							<li>Expert and investor connect opportunities</li>
+							<li>Registrations of new companies/startups</li>
+							<li>Accelerator connect</li>
+							<li>Services like business development, market research</li>
+						</ul>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="modal fade" id="myModal4" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+						<ul>
+							<li>Exclusive business and advisory services to the startups of the Empresario 2022 and assist them in the final pitching.</li>
+							<li></li>
+						</ul>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="modal fade" id="myModal5" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Services offered</h4>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--Partners-->
+	<div id="div_3" class="container-fluid partnersbox" style="display:none;">
+		<div class="row" style="margin-top: 8%;">
+			<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+				<a href="https://www.awfis.com/" lt="awfis" target="_blank"><img
+						src="https://coworkingmag.com/wp-content/uploads/2019/01/oyo-innov8-coworking-acquire.jpg"
+						class="partners"></a>
+			</div>
+			<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+				<a href="https://www.awfis.com/" lt="awfis" target="_blank"><img
+						src="https://d1.awsstatic.com/LATAM/Startup%20founders/LP_startups_logo_aws-activate.bde9cc1a112cd98c62c246232cc12e3139307fca.png"
+						class="partners adjust1"></a>
+			</div>
+			<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+				<a href="https://www.awfis.com/" lt="awfis" target="_blank"><img
+						src="https://ecell-iitkgp.org/ssp/images/slideuplift.png" class="partners adjust2"></a>
+			</div>
+			<!-- <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <a href="https://www.awfis.com/" lt="awfis" target="_blank"><img src="awfis.png" style="margin-top:5%;"
+                        class="partners"></a>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <a href="https://www.awfis.com/" lt="awfis" target="_blank"><img src="awfis.png" style="margin-top:5%;"
+                        class="partners"></a>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <a href="https://www.awfis.com/" lt="awfis" target="_blank"><img src="awfis.png" style="margin-top:5%;"
+                        class="partners"></a>
+            </div> -->
+		</div>
+	</div>
+	<!--contact-->
+	<div class="container-fluid contactbox">
+		<!-- <img src="ecell_logo_white.png" alt="Entrepreneurship Cell logo"> -->
+		<!-- <div class="row">
+            div.col-sm
+        </div> -->
+		<div class="row smbox">
+			<div class="getinbox">
+				<h2 style="margin-top: -1%;margin-bottom: 1.5rem;">GET IN TOUCH</h2>
+				<a href="https://www.facebook.com/ecell.iitkgp" class="fa fa-facebook social_icons"></a>
+				<a href="https://www.linkedin.com/in/ecell-iit-kharagpur-b2a11017/"
+					class="fa fa-linkedin social_icons"></a>
+				<a href="https://www.instagram.com/ecellkgp/" class="fa fa-instagram social_icons"></a>
+				<a href="https://twitter.com/ecelliitkgp" class="fa fa-twitter social_icons"></a>
+			</div>
+			<div class="col-sm-4">
+				<h3>Vaishnav Lembhe</h3>
+				<h4>Senior Manager</h4>
+				<p>Competitions and Associations &<br>Startups and Alumni Relations</p>
+				<p><i class="fa fa-envelope-o" style="padding-right: 3%;font-size: 1.5em;"></i><a
+						href="mailto:lslovelyjsr@gmail.com"
+						style="color: #fcf8e3;">vaishnav.lembhe@ecell-iitkgp.org</a></p>
+				<p><i class="fa fa-mobile" style="padding-right: 3%;font-size: 1.5em;"></i>+91-7775810993</p>
+				<a href="https://www.facebook.com/vaishnav.lembhe" class="fa fa-facebook social_icons"></a>
+				<a href="https://www.linkedin.com/in/vaishnav-lembhe-61665a1b4/"
+					class="fa fa-linkedin social_icons"></a>
+			</div>
+			<div class="col-sm-4">
+				<h3>Nayan Saluja</h3>
+				<h4>Senior Manager</h4>
+				<p>Events & Startups and<br>Alumni Relations</p>
+				<p><i class="fa fa-envelope-o" style="padding-right: 3%;font-size: 1.5em;"></i><a
+						href="mailto:lslovelyjsr@gmail.com" style="color: #fcf8e3;">nayan.saluja@ecell-iitkgp.org</a>
+				</p>
+				<p><i class="fa fa-mobile" style="padding-right: 3%;font-size: 1.5em;"></i>+91-8435131125</p>
+				<a href="https://www.facebook.com/nayan.saluja.125" class="fa fa-facebook social_icons"></a>
+				<a href="https://www.linkedin.com/in/nayan-saluja-3247561b3/" class="fa fa-linkedin social_icons"></a>
+			</div>
+			<div class="col-sm-4">
+				<h3>Rishabh Aggarwal</h3>
+				<h4>Senior Manager</h4>
+				<p>EAD/LSM Coordinator & Startup<br>and Alumni Relations</p>
+				<p><i class="fa fa-envelope-o" style="padding-right: 3%;font-size: 1.5em;"></i><a
+						href="mailto:lslovelyjsr@gmail.com"
+						style="color: #fcf8e3;">rishabh.aggarwal@ecell-iitkgp.org</a></p>
+				<p><i class="fa fa-mobile" style="padding-right: 3%;font-size: 1.5em;"></i>+91-9870189290</p>
+				<a href="https://www.facebook.com/rishabh.aggarwal.33449138" class="fa fa-facebook social_icons"></a>
+				<a href="https://www.linkedin.com/in/rishabh-aggarwal476/" class="fa fa-linkedin social_icons"></a>
+
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</body>
+
+</html>
