@@ -5,10 +5,10 @@
 
 
 img.logo1{
-    width:40%;
+    width: auto;
 }
 img.logo2{
-    width:38%;
+    width:auto;
     float:right;
 }
 .logobox{
@@ -28,7 +28,7 @@ img.logo2{
     font-weight:600 !important;
 }
 .contactbox{
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: #11212d;
     color: #fdf0ea;
@@ -71,12 +71,12 @@ img.logo2{
   }
     .partners{
         /* margin-top:10px; */
-        border: 1px solid #fbc7a4;
+        border: 1px solid white;
         border-radius: 50%;
         height: 182px;
         width: 195px;
         object-fit: scale-down;
-        background-color: #fbc7a4;
+        background-color: white;
     }
     .svgstyle{
         padding-top: 15%;
