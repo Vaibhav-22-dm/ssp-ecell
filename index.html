@@ -325,6 +325,7 @@
 								<!-- <a href="#" id="prevBtn">&laquo;</a> -->
 								<a href="#" class="" data-target="#custom_carousel" data-slide-to="0" id="page1btn">1</a>
 								<a href="#" class="active" data-target="#custom_carousel" data-slide-to="1" id="page2btn">2</a>
+								<a href="#" class="" data-target="#custom_carousel" data-slide-to="2" id="page3btn">3</a>
 								<!-- <a href="#" id="nxtBtn">&raquo;</a> -->
 							</div>
 							<script>
@@ -334,13 +335,27 @@
 									element.classList.add('active');
 									var element = document.getElementById('page2btn');
 									element.classList.remove('active');
+									var element = document.getElementById('page3btn');
+									element.classList.remove('active');
 								}
 
 								document.getElementById('page2btn').addEventListener('click', displayPage2);
 								function displayPage2() {
 									var element = document.getElementById('page2btn');
 									element.classList.add('active');
+									var element = document.getElementById('page3btn');
+									element.classList.remove('active');
 									var element = document.getElementById('page1btn');
+									element.classList.remove('active');
+								}
+
+								document.getElementById('page3btn').addEventListener('click', displayPage3);
+								function displayPage3() {
+									var element = document.getElementById('page3btn');
+									element.classList.add('active');
+									var element = document.getElementById('page1btn');
+									element.classList.remove('active');
+									var element = document.getElementById('page2btn');
 									element.classList.remove('active');
 								}
 							</script>
@@ -351,7 +366,7 @@
 				<div class="carousel-inner" style="    margin-right: auto;
                 margin-left: auto;
                 width: 80%;">
-					<div class="item active">
+					<div class="item ">
 						<div class="container-fluid">
 							<div class="row" style="    margin-bottom: 5%;">
 								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
@@ -402,7 +417,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item  active">
 						<div class="container-fluid">
 							<div class="row" style="    margin-bottom: 5%;">
 								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
@@ -450,6 +465,31 @@
                                             margin-left: 36%;
                                             margin-top: 5%;background-color: #11212d;" data-toggle="modal"
 											data-target="#myModal4">Read more</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="container-fluid">
+							<div class="row" style="    margin-bottom: 5%;">
+								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
+									<div style="padding:10%;">
+										<h4 style="text-align: center;"><b>GoToPitch</b></h4>
+										<div style="margin-left: auto; margin-right: auto;">
+											<img src="https://gotopitch.ai/static/images/logo-img.png"
+												style="margin-left: auto; margin-right: auto; width: auto; height: 100px; display: block">
+										</div>
+										<br>
+										<p style="font-size: 1em;
+                                    text-align: justify;">
+											"GoToPitch" is a global VaaS (Video as a service) company, HQ in Tokyo, Japan, disrupting the future of the start-ups fundraising process.GoToPitch provide a platform for the founders and entrepreneurs to record their video pitches and connect with the global VCs and CVCs and apply for funding. GoToPitch built this technology to change the conventional method of fundraising in the start-up ecosystem and to help founders to target potential investors only instead of sending spam emails.
+										</p>
+										<button class="btn btn-info" type="button" style="    padding: 3% !important;
+                                            font-size: 1.2em !important;
+                                            margin-left: 36%;
+                                            margin-top: 5%;background-color: #11212d;" data-toggle="modal"
+											data-target="#myModal5">Read more</button>
 									</div>
 								</div>
 							</div>
@@ -579,7 +619,18 @@
 						<h4 class="modal-title">Services offered</h4>
 					</div>
 					<div class="modal-body">
-						<p></p>
+						<p>
+							<ul>
+								<li>Create your Video pitch</li>
+								<li>Get shareable link</li>
+								<li>Get video analytics</li>
+								<li>Search investor</li>
+								<li> Use private mode</li>
+								<li>Talk to the experts</li>
+								<li>Apply 15 investors every month</li>
+								<li>Reply investor’s messages</li>
+							</ul>
+						</p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
