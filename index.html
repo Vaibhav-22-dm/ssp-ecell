@@ -319,12 +319,24 @@
 									background-color: #ddd;
 									border-radius: 5px;
 								}
+
+								#box1{
+									display: flex;
+								}
+
+								#box2{
+									display: none;
+								}
+
+								#box3{
+									display:none;
+								}
 							</style>
 
 							<div class="pagination">
 								<!-- <a href="#" id="prevBtn">&laquo;</a> -->
-								<a href="#" class="" data-target="#custom_carousel" data-slide-to="0" id="page1btn">1</a>
-								<a href="#" class="active" data-target="#custom_carousel" data-slide-to="1" id="page2btn">2</a>
+								<a href="#" class="active" data-target="#custom_carousel" data-slide-to="0" id="page1btn">1</a>
+								<a href="#" class="" data-target="#custom_carousel" data-slide-to="1" id="page2btn">2</a>
 								<a href="#" class="" data-target="#custom_carousel" data-slide-to="2" id="page3btn">3</a>
 								<!-- <a href="#" id="nxtBtn">&raquo;</a> -->
 							</div>
@@ -337,6 +349,9 @@
 									element.classList.remove('active');
 									var element = document.getElementById('page3btn');
 									element.classList.remove('active');
+									document.getElementById('box1').style.display = 'flex';
+									document.getElementById('box2').style.display = 'none';
+									document.getElementById('box3').style.display = 'none';
 								}
 
 								document.getElementById('page2btn').addEventListener('click', displayPage2);
@@ -347,6 +362,9 @@
 									element.classList.remove('active');
 									var element = document.getElementById('page1btn');
 									element.classList.remove('active');
+									document.getElementById('box2').style.display = 'flex';
+									document.getElementById('box1').style.display = 'none';
+									document.getElementById('box3').style.display = 'none';
 								}
 
 								document.getElementById('page3btn').addEventListener('click', displayPage3);
@@ -357,6 +375,9 @@
 									element.classList.remove('active');
 									var element = document.getElementById('page2btn');
 									element.classList.remove('active');
+									document.getElementById('box3').style.display = 'flex';
+									document.getElementById('box1').style.display = 'none';
+									document.getElementById('box2').style.display = 'none';
 								}
 							</script>
 						</div>
@@ -366,7 +387,7 @@
 				<div class="carousel-inner" style="    margin-right: auto;
                 margin-left: auto;
                 width: 80%;">
-					<div class="item ">
+					<div class="item " id="box1">
 						<div class="container-fluid">
 							<div class="row" style="    margin-bottom: 5%;">
 								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
@@ -417,7 +438,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item  active">
+					<div class="item" id="box2">
 						<div class="container-fluid">
 							<div class="row" style="    margin-bottom: 5%;">
 								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
@@ -470,7 +491,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item" id="box3">
 						<div class="container-fluid">
 							<div class="row" style="    margin-bottom: 5%;">
 								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
@@ -679,7 +700,7 @@
 				<h4>Senior Manager</h4>
 				<p>Competitions and Associations &<br>Startups and Alumni Relations</p>
 				<p><i class="fa fa-envelope-o" style="padding-right: 3%;font-size: 1.5em;"></i><a
-						href="mailto:lslovelyjsr@gmail.com"
+						href="mailto:vaishnav.lembhe@ecell-iitkgp.org"
 						style="color: #fcf8e3;">vaishnav.lembhe@ecell-iitkgp.org</a></p>
 				<p><i class="fa fa-mobile" style="padding-right: 3%;font-size: 1.5em;"></i>+91-7775810993</p>
 				<a href="https://www.facebook.com/vaishnav.lembhe" class="fa fa-facebook social_icons"></a>
@@ -691,7 +712,7 @@
 				<h4>Senior Manager</h4>
 				<p>Events & Startups and<br>Alumni Relations</p>
 				<p><i class="fa fa-envelope-o" style="padding-right: 3%;font-size: 1.5em;"></i><a
-						href="mailto:lslovelyjsr@gmail.com" style="color: #fcf8e3;">nayan.saluja@ecell-iitkgp.org</a>
+						href="mailto:nayan.saluja@ecell-iitkgp.org" style="color: #fcf8e3;">nayan.saluja@ecell-iitkgp.org</a>
 				</p>
 				<p><i class="fa fa-mobile" style="padding-right: 3%;font-size: 1.5em;"></i>+91-8435131125</p>
 				<a href="https://www.facebook.com/nayan.saluja.125" class="fa fa-facebook social_icons"></a>
@@ -702,7 +723,7 @@
 				<h4>Senior Manager</h4>
 				<p>EAD/LSM Coordinator & Startup<br>and Alumni Relations</p>
 				<p><i class="fa fa-envelope-o" style="padding-right: 3%;font-size: 1.5em;"></i><a
-						href="mailto:lslovelyjsr@gmail.com"
+						href="mailto:rishabh.aggarwal@ecell-iitkgp.org"
 						style="color: #fcf8e3;">rishabh.aggarwal@ecell-iitkgp.org</a></p>
 				<p><i class="fa fa-mobile" style="padding-right: 3%;font-size: 1.5em;"></i>+91-9870189290</p>
 				<a href="https://www.facebook.com/rishabh.aggarwal.33449138" class="fa fa-facebook social_icons"></a>
