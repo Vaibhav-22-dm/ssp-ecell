@@ -149,11 +149,11 @@
 			<div class="row">
 				<div class="col-sm-6 logobox" style="display: flex; height: 90px">
 					<div style="width: 50%; flex: 2; height: 100%">
-						<img src="ecell_logo_white.png" alt="Entrepreneurship Cell logo" class="logo1" style="height: 100%; ">
+						<a href='https://www.ecell-iitkgp.org/'><img src="ecell_logo_white.png" alt="Entrepreneurship Cell logo" class="logo1" style="height: 100%; "></a>
 					</div>
 					<div style="width: 50%; flex: 2; height: 100%">
-						<img src="https://ecelliitkgp.github.io/Newsletter-ecell-iitkgp/KGPSCP%20long%20logo.png"
-						alt="Entrepreneurship Cell logo" class="logo2" style="height: 100%; ">
+						<a href='https://community.ecell-iitkgp.org/'><img src="https://ecelliitkgp.github.io/Newsletter-ecell-iitkgp/KGPSCP%20long%20logo.png"
+						alt="Entrepreneurship Cell logo" class="logo2" style="height: 100%; "></a>
 					</div>
 				</div>
 				<div class="col-sm-6 btnbox">
@@ -332,6 +332,10 @@
 									display:none;
 								}
 
+								#box4{
+									display:none;
+								}
+
 								@media screen and (max-width:500px) {
 									#gotopitchlogo{
 										height: 60px !important;
@@ -347,6 +351,7 @@
 								<a href="#" class="active" data-target="#custom_carousel" data-slide-to="0" id="page1btn">1</a>
 								<a href="#" class="" data-target="#custom_carousel" data-slide-to="1" id="page2btn">2</a>
 								<a href="#" class="" data-target="#custom_carousel" data-slide-to="2" id="page3btn">3</a>
+								<a href="#" class="" data-target="#custom_carousel" data-slide-to="3" id="page4btn">4</a>
 								<!-- <a href="#" id="nxtBtn">&raquo;</a> -->
 							</div>
 							<script>
@@ -358,9 +363,12 @@
 									element.classList.remove('active');
 									var element = document.getElementById('page3btn');
 									element.classList.remove('active');
+									var element = document.getElementById('page4btn');
+									element.classList.remove('active');
 									document.getElementById('box1').style.display = 'flex';
 									document.getElementById('box2').style.display = 'none';
 									document.getElementById('box3').style.display = 'none';
+									document.getElementById('box4').style.display = 'none';
 								}
 
 								document.getElementById('page2btn').addEventListener('click', displayPage2);
@@ -371,9 +379,12 @@
 									element.classList.remove('active');
 									var element = document.getElementById('page1btn');
 									element.classList.remove('active');
+									var element = document.getElementById('page4btn');
+									element.classList.remove('active');
 									document.getElementById('box2').style.display = 'flex';
 									document.getElementById('box1').style.display = 'none';
 									document.getElementById('box3').style.display = 'none';
+									document.getElementById('box4').style.display = 'none';
 								}
 
 								document.getElementById('page3btn').addEventListener('click', displayPage3);
@@ -384,9 +395,28 @@
 									element.classList.remove('active');
 									var element = document.getElementById('page2btn');
 									element.classList.remove('active');
+									var element = document.getElementById('page4btn');
+									element.classList.remove('active');
 									document.getElementById('box3').style.display = 'flex';
 									document.getElementById('box1').style.display = 'none';
 									document.getElementById('box2').style.display = 'none';
+									document.getElementById('box4').style.display = 'none';
+								}
+
+								document.getElementById('page4btn').addEventListener('click', displayPage4);
+								function displayPage4() {
+									var element = document.getElementById('page4btn');
+									element.classList.add('active');
+									var element = document.getElementById('page1btn');
+									element.classList.remove('active');
+									var element = document.getElementById('page2btn');
+									element.classList.remove('active');
+									var element = document.getElementById('page3btn');
+									element.classList.remove('active');
+									document.getElementById('box4').style.display = 'flex';
+									document.getElementById('box1').style.display = 'none';
+									document.getElementById('box2').style.display = 'none';
+									document.getElementById('box3').style.display = 'none';
 								}
 							</script>
 						</div>
@@ -502,14 +532,15 @@
 					</div>
 					<div class="item" id="box3">
 						<div class="container-fluid">
-							<div class="row" style="    margin-bottom: 5%;">
+							<div class="row" style="margin-bottom: 5%;">
 								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
 									<div style="padding:10%;">
 										<h4 style="text-align: center;"><b>GoToPitch</b></h4>
 										<div style="margin-left: auto; margin-right: auto;">
 											<a href="https://gotopitch.ai/"><img src="https://gotopitch.ai/static/images/logo-img.png"
 												style="margin-left: auto; margin-right: auto; width: auto; height: 100px; display: block" id="gotopitchlogo">
-                                            </a></div>
+                                            </a>
+										</div>
 										<br>
 										<p style="font-size: 1em;
                                     text-align: justify;">
@@ -539,6 +570,32 @@
                                             margin-left: 36%;
                                             margin-top: 5%;background-color: #11212d;" data-toggle="modal"
 											data-target="#myModal6">Read more</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item" id="box4">
+						<div class="container-fluid">
+							<div class="row" style="margin-bottom: 5%;">
+								<div class="col-sm-6 servicescol" style="height: auto;margin-right: 5%;">
+									<div style="padding:10%;">
+										<h4 style="text-align: center;"><b>Applied Wonder</b></h4>
+										<div style="margin-left: auto; margin-right: auto;">
+											<a href="http://appliedwonder.in/"><img src="./applied wonder logo-01.png"
+												style="margin-left: auto; margin-right: auto; width: auto; height: 100px; display: block" id="gotopitchlogo">
+                                            </a>
+										</div>
+										<br>
+										<p style="font-size: 1em;
+                                    text-align: justify;">
+											Applied Wonder is an odyssey to change the world for the better through creativity. We are the distilled result of more than a decade of work, over the course of which we have given voice to remarkable brands, crafted impactful campaigns that have shaped policy, launched movements and products, directed hundreds of films that have informed and inspired and fashioned some of the most iconic behavior change campaigns. Applied Wonder is one of the finest pure play creative agencies for the underdog – for social organizations and movements, for socially inspired businesses and impassioned startups. We specialize in Brand Design, Communication Design, Social Change and  Behavior Change Campaigns and Films.
+										</p>
+										<button class="btn btn-info" type="button" style="    padding: 3% !important;
+                                            font-size: 1.2em !important;
+                                            margin-left: 36%;
+                                            margin-top: 5%;background-color: #11212d;" data-toggle="modal"
+											data-target="#myModal7">Read more</button>
 									</div>
 								</div>
 							</div>
@@ -703,6 +760,32 @@
 								<li>Top startups of LSM/E-START/EMPRESARIO/MAS/KAN will get 5000$ AWS credits</li>
 								<li>Other startups who attend the event (and not pitched) will be personally mailed by us and offered 1000$ AWS Credits.</li>
 								<li>Startups of IIT KGP can directly contact E-Cell, IIT Kharagpur to avail 1000$ AWS credits</li>
+							</ul>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="modal fade" id="myModal7" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Services offered</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							<ul>
+								<li>Brand Design Logo, typography, house colours, letterhead, PPT template</li>
+								<li>Brand Manual, Positioning & Personality</li>
+								<li>Consumer-relevant website and brochure</li>
+								<li>Explainer Video/ Brand Film Short films</li>
 							</ul>
 						</p>
 					</div>
