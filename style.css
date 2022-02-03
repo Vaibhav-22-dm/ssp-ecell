@@ -238,3 +238,6 @@ img.logo2{
             height:100vh;
           }
         }
+.container-fluid{
+  height: max-content;
+}
